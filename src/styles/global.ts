@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { pxToVw } from '../utils/utils';
 
 export default createGlobalStyle`
   * {
@@ -8,10 +9,12 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.background};
+    background: ${(props) => props.theme.colors.primary};
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: ${props => props.theme.colors.text};
+    font-family: 'Inter', sans-serif;
+    color: ${(props) => props.theme.colors.text};
   }
+
+
 
 `;

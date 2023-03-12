@@ -1,26 +1,26 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from 'styled-components';
-import Switch from 'react-switch';
-import { Container } from './styles';
+import { useState, useContext } from 'react';
 import { ContextTheme, ThemeContextType } from '../../utils/ThemeContext';
+import * as S from './styles';
+import * as C from '../index';
 
-const Header: React.FC = () => {
-  const { colors, title } = useContext(ThemeContext);
-  const { toggleTheme } = React.useContext(ContextTheme) as ThemeContextType;
+const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+  const { toggleTheme } = useContext(ContextTheme) as ThemeContextType;
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
 
   return (
-    <Container>
-      Header
-      <Switch
-        onChange={toggleTheme}
-        checked={title === 'dark'}
-        checkedIcon={false}
-        uncheckedIcon={false}
-        height={15}
-        width={50}
-        handleDiameter={20}
-      />
-    </Container>
+    <S.Container>
+      <div>
+        <C.HamburguerButton isOpen={openMenu} action={toggleMenu} />
+        <S.Title>Bruno Tassinari</S.Title>
+      </div>
+      <C.Switch isOpen={openMenu} action={toggleTheme} />
+
+      <C.MenuNav isOpen={openMenu} />
+    </S.Container>
   );
 };
 
