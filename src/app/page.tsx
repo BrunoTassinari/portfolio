@@ -1,7 +1,9 @@
 export default function Home() {
   return (
-    <main>
-      <h1>Hello</h1>
-    </main>
+    <section className='p-24'>
+      <div className='container'>
+        <h1 className='text-3xl font-bol'>Hello</h1>
+      </div>
+    </section>
   )
 }
