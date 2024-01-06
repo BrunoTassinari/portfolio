@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid'
 
-const ThemeButton = () => {
+const ToggleTheme = () => {
   const { resolvedTheme, setTheme } = useTheme()
 
 
@@ -24,4 +24,4 @@ const ThemeButton = () => {
   )
 }
 
-export default ThemeButton
+export default ToggleTheme

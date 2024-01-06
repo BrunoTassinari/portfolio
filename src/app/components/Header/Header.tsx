@@ -1,8 +1,8 @@
 'use client'
 
 import Link from "next/link"
-import ThemeButton from "./ThemeButton"
 import { useState, useEffect } from "react"
+import ToggleTheme from "@components/ToggleTheme"
 
 const Header = () => {
   const [mounted, setMounted] = useState(false)
@@ -24,7 +24,7 @@ const Header = () => {
 
       <p>Bruno Tassinari</p>
 
-      <ThemeButton />
+      <ToggleTheme />
     </nav>
   </header>
   )
