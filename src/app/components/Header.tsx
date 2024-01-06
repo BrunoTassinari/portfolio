@@ -2,8 +2,17 @@
 
 import Link from "next/link"
 import ThemeButton from "./ThemeButton"
+import { useState, useEffect } from "react"
 
 const Header = () => {
+  const [mounted, setMounted] = useState(false)
+  
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) {
+    return null
+  }
+
   return (
     <header className='p-24 py-6'>
     <nav className='container flex items-center justify-between'>
