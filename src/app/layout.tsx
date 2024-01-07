@@ -17,7 +17,7 @@ type RootProps = {
 export default function RootLayout({ children }: RootProps) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={`${inter.className} bg-light-secondary dark:bg-dark-secondary`}>
+      <body className={`${inter.className} bg-light-secondary text-light-text-primary dark:bg-dark-secondary dark:text-dark-text-primary`}>
         <Providers>
          <Header />
 

@@ -14,7 +14,7 @@ const config: Config = {
         'light-secondary': '#F3F8FE',
         'light-text-primary': '#0A122A',
         'light-text-secondary': '#504F4F',
-        'dark-primary': '#504F4F',
+        'dark-primary': '#333333',
         'dark-secondary': '#444445',
         'dark-text-primary': '#FEFDFE',
         'dark-text-secondary': '#F3F8FE',
