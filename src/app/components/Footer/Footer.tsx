@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <Mounted>
       <footer className="px-4 py-3 bg-light-primary dark:bg-dark-primary border-t-primary border-t-4">
-        <div className="container flex flex-col items-center justify-between">
+        <nav className="container flex flex-col items-center justify-between">
           <div className="flex justify-between items-center w-2/4">
             <div className="flex items-center">
               <Github className="h-6 w-6 text-primary mr-1" />
@@ -40,7 +40,7 @@ const Footer = () => {
               Bruno Tassinari
             </a>
           </span>
-        </div>
+        </nav>
       </footer>
     </Mounted>
   );
