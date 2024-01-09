@@ -12,7 +12,7 @@ const Header = () => {
   if (!mounted) return null;
 
   return (
-    <header className="px-4 py-3 bg-light-primary dark:bg-dark-primary border-b-primary border-b-4">
+    <header className="p-[20px] py-3 bg-light-primary dark:bg-dark-primary border-b-primary border-b-4">
       <div className="container flex items-center justify-between">
         <span className="text-base">Bruno Tassinari</span>
 
