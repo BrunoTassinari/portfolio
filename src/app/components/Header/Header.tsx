@@ -38,13 +38,10 @@ const Header = () => {
 
   return (
     <Mounted>
-      <header
-        className={`p-[20px] py-3 bg-light-primary dark:bg-dark-primary border-b-light-tertiary dark:border-b-dark-tertiary border-b-2`}
-      >
-        <nav className="container flex items-center justify-between">
+      <header className="bg-light-primary dark:bg-dark-primary border-b-light-tertiary dark:border-b-dark-tertiary border-b-2">
+        <nav className="container w-[90%] py-3 m-auto flex items-center justify-between">
           <span className="text-base">Bruno Tassinari</span>
-
-          <div className="flex justify-between items-center w-1/5">
+          <div className="w-[20%] flex justify-between items-center">
             <ToggleTheme />
             <button onClick={toggleMenu}>
               <Bars3BottomRightIcon className="h-6 w-6 text-light-text-primary dark:text-dark-text-primary" />
@@ -57,9 +54,9 @@ const Header = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="fixed left-0 top-0 w-full h-screen origin-top bg-light-tertiary dark:bg-dark-tertiary text-black p-[20px] py-4"
+                className="fixed left-0 top-0 w-full h-full origin-top bg-light-tertiary dark:bg-dark-tertiary"
               >
-                <div className="flex h-full flex-col">
+                <div className="container w-[90%] py-3 m-auto flex justify-center flex-col">
                   <div className="flex justify-between">
                     <span className="text-base text-ligth-text-contrast dark:text-dark-text-contrast">
                       Bruno Tassinari
