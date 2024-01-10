@@ -6,11 +6,11 @@ import Mounted from "../Mounted";
 const Footer = () => {
   return (
     <Mounted>
-      <footer className="px-4 py-3 bg-light-primary dark:bg-dark-primary border-t-primary border-t-4">
+      <footer className="px-4 py-3 bg-light-primary dark:bg-dark-primary border-t-light-tertiary dark:border-t-dark-tertiary border-t-2">
         <nav className="container flex flex-col items-center justify-between">
           <div className="flex justify-between items-center w-2/4">
             <div className="flex items-center">
-              <Github className="h-6 w-6 text-primary mr-1" />
+              <Github className="h-6 w-6 text-light-tertiary dark:text-dark-tertiary mr-1" />
               <a
                 className="underline text-xs"
                 href="https://github.com/BrunoTassinari"
@@ -20,7 +20,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <LinkedinSquare className="h-6 w-6 text-primary mr-1" />
+              <LinkedinSquare className="h-6 w-6  text-light-tertiary dark:text-dark-tertiary mr-1" />
               <a
                 className="underline text-xs"
                 href="https://github.com/BrunoTassinari"
@@ -33,7 +33,7 @@ const Footer = () => {
           <span className="text-xs mt-2">
             &copy; 2024 - Desenvolvido por{" "}
             <a
-              className="underline"
+              className="underline text-light-tertiary dark:text-dark-tertiary"
               target="_blank"
               href="https://github.com/BrunoTassinari"
             >

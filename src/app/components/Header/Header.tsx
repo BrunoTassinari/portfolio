@@ -1,5 +1,7 @@
 "use client";
 
+import { useTheme } from "next-themes";
+
 import { useState, useEffect } from "react";
 import ToggleTheme from "@components/ToggleTheme";
 import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -8,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
 
   const toggleMenu = () => {
     setOpen((prevState) => !prevState);
@@ -35,7 +38,9 @@ const Header = () => {
 
   return (
     <Mounted>
-      <header className="p-[20px] py-3 bg-light-primary dark:bg-dark-primary border-b-primary border-b-4">
+      <header
+        className={`p-[20px] py-3 bg-light-primary dark:bg-dark-primary border-b-light-tertiary dark:border-b-dark-tertiary border-b-2`}
+      >
         <nav className="container flex items-center justify-between">
           <span className="text-base">Bruno Tassinari</span>
 
@@ -52,15 +57,15 @@ const Header = () => {
                 initial="initial"
                 animate="animate"
                 exit="exit"
-                className="fixed left-0 top-0 w-full h-screen origin-top bg-primary text-black p-[20px] py-4"
+                className="fixed left-0 top-0 w-full h-screen origin-top bg-light-tertiary dark:bg-dark-tertiary text-black p-[20px] py-4"
               >
                 <div className="flex h-full flex-col">
                   <div className="flex justify-between">
-                    <span className="text-base text-dark-text-primary">
+                    <span className="text-base text-ligth-text-contrast dark:text-dark-text-contrast">
                       Bruno Tassinari
                     </span>
                     <button onClick={toggleMenu}>
-                      <XMarkIcon className="h-6 w-6 text-dark-text-primary" />
+                      <XMarkIcon className="h-6 w-6 text-ligth-text-contrast dark:text-dark-text-contrast" />
                     </button>
                   </div>
                 </div>
