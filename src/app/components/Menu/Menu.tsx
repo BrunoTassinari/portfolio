@@ -44,7 +44,7 @@ const Menu = () => {
             exit="exit"
             className="fixed left-0 top-0 w-full h-full origin-top bg-light-tertiary dark:bg-dark-tertiary"
           >
-            <div className="container w-[90%] py-3 m-auto flex justify-center flex-col">
+            <div className="container w-[90%] py-4 m-auto flex justify-center flex-col">
               <div className="flex justify-between">
                 <span className="text-base text-ligth-text-contrast dark:text-dark-text-contrast">
                   Bruno Tassinari
