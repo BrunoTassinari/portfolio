@@ -1,14 +1,14 @@
 import Mounted from "../Mounted";
 
 type SubtitleProps = {
-  text: string;
+  children: string;
 };
 
-const Subtitle = ({ text }: SubtitleProps) => {
+const Subtitle = ({ children }: SubtitleProps) => {
   return (
     <Mounted>
       <span className="m-0 text-[12px] text-light-tertiary dark:text-dark-tertiary uppercase">
-        {text}
+        {children}
       </span>
     </Mounted>
   );
