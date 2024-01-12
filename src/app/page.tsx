@@ -1,14 +1,13 @@
 import Card from "@components/Card";
 import Title from "@components/Title";
+import Subtitle from "./components/Subtitle";
 
 export default function Home() {
   return (
     <section>
       <Card>
         <div className="w-full flex flex-col justify-start">
-          <span className="m-0 text-[12px] text-primary uppercase">
-            Meu nome é
-          </span>
+          <Subtitle text={"Meu nome é"} />
           <Title text={"Bruno Tassinari"} />
         </div>
         <p className="text-[12px] text-light-text-secondary dark:text-dark-text-secondary mt-[8px]">
