@@ -1,4 +1,5 @@
 import Card from "@components/Card";
+import Title from "@components/Title";
 
 export default function Home() {
   return (
@@ -8,9 +9,7 @@ export default function Home() {
           <span className="m-0 text-[12px] text-primary uppercase">
             Meu nome é
           </span>
-          <h1 className="m-0 font-bold uppercase text-light-text-primary dark:text-dark-text-primary">
-            Bruno Tassinari
-          </h1>
+          <Title text={"Bruno Tassinari"} />
         </div>
         <p className="text-[12px] text-light-text-secondary dark:text-dark-text-secondary mt-[8px]">
           Lorem Ipsum é simplesmente uma simulação de texto da indústria
