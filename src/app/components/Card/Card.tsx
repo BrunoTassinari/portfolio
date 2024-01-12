@@ -9,7 +9,7 @@ type CardProps = {
 const Card = ({ children }: CardProps) => {
   return (
     <Mounted>
-      <div className="flex flex-col items-center justify-center p-4 m-[20px]">
+      <div className="container w-[80%] m-auto my-5 flex flex-col items-center justify-center">
         {children}
       </div>
     </Mounted>
