@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import { Inter } from "next/font/google";
-import Providers from "@/app/providers";
+import Providers from "@/app/utils/providers";
 import Header from "@components/Header";
 import Footer from "./components/Footer";
 
@@ -19,7 +19,13 @@ export default function RootLayout({ children }: RootProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} h-screen bg-light-secondary text-light-text-primary dark:bg-dark-secondary dark:text-dark-text-primary`}
+        className={`
+          ${inter.className} 
+          h-screen 
+          bg-light-secondary 
+          text-light-text-primary 
+          dark:bg-dark-secondary 
+          dark:text-dark-text-primary`}
       >
         <Providers>
           <Header />
