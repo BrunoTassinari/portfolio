@@ -1,10 +1,10 @@
 const commonClasses = [
   "p-2",
   "mr-3",
-  "border-2",
+  "border-[1px]",
   "rounded-lg",
-  "text-[11px]",
-  "font-bold",
+  "text-[0.9rem]",
+  "font-medium",
 ];
 
 const variantClasses: any = {

@@ -22,9 +22,9 @@ export default function RootLayout({ children }: RootProps) {
         className={`
           ${inter.className} 
           h-screen 
-          bg-light-secondary 
+          bg-light-primary 
           text-light-text-primary 
-          dark:bg-dark-secondary 
+          dark:bg-dark-primary 
           dark:text-dark-text-primary`}
       >
         <Providers>

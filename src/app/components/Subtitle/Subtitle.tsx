@@ -7,7 +7,7 @@ type SubtitleProps = {
 const Subtitle = ({ children }: SubtitleProps) => {
   return (
     <Mounted>
-      <span className="m-0 text-[12px] text-light-tertiary dark:text-dark-tertiary uppercase">
+      <span className="m-0 text-[0.8rem] text-light-tertiary dark:text-dark-tertiary uppercase">
         {children}
       </span>
     </Mounted>
