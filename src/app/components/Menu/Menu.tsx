@@ -46,7 +46,7 @@ const Menu = () => {
           >
             <div className="container w-[90%] py-4 m-auto flex justify-center flex-col">
               <div className="flex justify-between">
-                <span className="text-base text-ligth-text-contrast dark:text-dark-text-contrast">
+                <span className="text-[1rem] font-bold text-ligth-text-contrast dark:text-dark-text-contrast">
                   Bruno Tassinari
                 </span>
                 <button onClick={toggleMenu}>

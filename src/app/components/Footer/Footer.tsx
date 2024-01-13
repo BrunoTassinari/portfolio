@@ -6,7 +6,7 @@ import Mounted from "../Mounted";
 const Footer = () => {
   return (
     <Mounted>
-      <footer className="bg-light-primary dark:bg-dark-primary border-t-2 border-t-light-tertiary dark:border-t-dark-tertiary ">
+      <footer className="bg-light-primary dark:bg-dark-primary border-t-[1px] border-t-light-tertiary dark:border-t-dark-tertiary">
         <nav className="w-[90%] py-3 m-auto container flex flex-col items-center justify-between">
           <div className="flex justify-between items-center w-2/4">
             <div className="flex items-center">

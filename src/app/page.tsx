@@ -16,7 +16,8 @@ export default function Home() {
           Lorem Ipsum é simplesmente uma simulação de texto da indústria
           tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
           quando um impressor desconhecido pegou uma bandeja de tipos e os
-          embaralhou para fazer um livro de modelos de tipos.
+          embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum é
+          simplesmente uma simulação de texto.
         </Paragraph>
         <div className="w-full flex items-start mt-3">
           <Button variant="secondary">
