@@ -1,7 +1,8 @@
-import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { AnimatePresence, motion } from "framer-motion";
-import Mounted from "../Mounted";
 import { useState } from "react";
+
+import Mounted from "@baseComponents/Mounted";
+import Icon from "@baseComponents/Icon";
 
 const menuAnimation = {
   initial: {
@@ -33,7 +34,10 @@ const Menu = () => {
   return (
     <Mounted>
       <button onClick={toggleMenu}>
-        <Bars3BottomRightIcon className="h-6 w-6 text-light-text-primary dark:text-dark-text-primary" />
+        <Icon
+          icon="bars3BottomRight"
+          className="mr-1 h-6 w-6 text-light-text-primary dark:text-dark-text-primary"
+        />
       </button>
       <AnimatePresence>
         {open && (
@@ -50,7 +54,10 @@ const Menu = () => {
                   Bruno Tassinari
                 </span>
                 <button onClick={toggleMenu}>
-                  <XMarkIcon className="h-6 w-6 text-ligth-text-contrast dark:text-dark-text-contrast" />
+                  <Icon
+                    icon="xMark"
+                    className="mr-1 h-6 w-6 text-ligth-text-contrast dark:text-dark-text-contrast"
+                  />
                 </button>
               </div>
             </div>

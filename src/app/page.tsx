@@ -1,14 +1,13 @@
 "use client";
 
-import Card from "@/app/components/baseComponents/Card";
-import Title from "@/app/components/baseComponents/Title";
-import Subtitle from "@/app/components/baseComponents/Subtitle";
-import Paragraph from "@/app/components/baseComponents/Paragraph";
-import Button from "@/app/components/baseComponents/Button";
+import Card from "@baseComponents/Card";
+import Title from "@baseComponents/Title";
+import Subtitle from "@baseComponents/Subtitle";
+import Paragraph from "@baseComponents/Paragraph";
+import Button from "@baseComponents/Button";
+import Icon from "@baseComponents/Icon";
 
 import skills from "@/app/constants/skills";
-
-import { Github, LinkedinSquare } from "styled-icons/boxicons-logos";
 
 export default function Home() {
   return (
@@ -36,8 +35,14 @@ export default function Home() {
           </Button>
         </div>
         <div className="w-full flex items-start mt-1">
-          <LinkedinSquare className="h-7 w-7  text-light-tertiary dark:text-dark-tertiary mr-1" />
-          <Github className="h-7 w-7 text-light-tertiary dark:text-dark-tertiary mr-1" />
+          <Icon
+            icon="linkedin"
+            className="h-7 w-7  text-light-tertiary dark:text-dark-tertiary mr-1"
+          />
+          <Icon
+            icon="github"
+            className="h-7 w-7 text-light-tertiary dark:text-dark-tertiary mr-1"
+          />
         </div>
       </Card>
       <Card>
@@ -67,7 +72,6 @@ export default function Home() {
             {skills.map((skill) => (
               <li key={skill.title}>
                 <div className="flex items-center gap-2">
-                  <div>{skill.icon}</div>
                   <span>{skill.title}</span>
                 </div>
               </li>

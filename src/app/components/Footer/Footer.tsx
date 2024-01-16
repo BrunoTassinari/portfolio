@@ -1,8 +1,7 @@
 "use client";
 
-import { Github, LinkedinSquare } from "styled-icons/boxicons-logos";
-import Mounted from "../baseComponents/Mounted";
-import Icon from "../baseComponents/Icon/Icon";
+import Mounted from "@baseComponents/Mounted";
+import Icon from "@baseComponents/Icon/Icon";
 
 const Footer = () => {
   return (
@@ -11,7 +10,7 @@ const Footer = () => {
         <nav className="w-[90%] py-3 m-auto container flex flex-col items-center justify-between">
           <div className="flex justify-between items-center w-2/4">
             <div className="flex items-center">
-              <Icon name="github" />
+              <Icon icon="github" />
               <a
                 className="underline text-xs"
                 href="https://github.com/BrunoTassinari"
@@ -21,7 +20,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <LinkedinSquare className="h-6 w-6  text-light-tertiary dark:text-dark-tertiary mr-1" />
+              <Icon icon="linkedin" />
               <a
                 className="underline text-xs"
                 href="https://github.com/BrunoTassinari"
