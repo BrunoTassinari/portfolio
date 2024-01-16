@@ -1,10 +1,10 @@
 "use client";
 
-import Card from "@components/Card";
-import Title from "@components/Title";
-import Subtitle from "@components/Subtitle";
-import Paragraph from "@components/Paragraph";
-import Button from "@components/Button";
+import Card from "@/app/components/baseComponents/Card";
+import Title from "@/app/components/baseComponents/Title";
+import Subtitle from "@/app/components/baseComponents/Subtitle";
+import Paragraph from "@/app/components/baseComponents/Paragraph";
+import Button from "@/app/components/baseComponents/Button";
 
 import skills from "@/app/constants/skills";
 
