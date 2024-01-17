@@ -1,4 +1,18 @@
-import { Github, LinkedinSquare } from "styled-icons/boxicons-logos";
+import {
+  Github,
+  LinkedinSquare,
+  Javascript,
+  Java,
+  Typescript,
+  Angular,
+  ReactLogo,
+  TailwindCss,
+  Nodejs,
+  Mongodb,
+  Docker,
+} from "styled-icons/boxicons-logos";
+import { Dotnet, Postgresql } from "styled-icons/simple-icons";
+import { BodyText } from "styled-icons/bootstrap";
 import {
   Bars3BottomRightIcon,
   XMarkIcon,
@@ -17,6 +31,18 @@ const icons = {
   xMark: XMarkIcon,
   sun: SunIcon,
   moon: MoonIcon,
+  javascript: Javascript,
+  java: Java,
+  typescript: Typescript,
+  angular: Angular,
+  react: ReactLogo,
+  tailwind: TailwindCss,
+  nodejs: Nodejs,
+  mongodb: Mongodb,
+  docker: Docker,
+  dotnet: Dotnet,
+  postgresql: Postgresql,
+  htmlcss: BodyText,
 } as any;
 
 const Icon = ({ icon, ...rest }: IconProps) => {

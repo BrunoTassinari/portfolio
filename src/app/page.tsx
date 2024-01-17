@@ -67,11 +67,22 @@ export default function Home() {
           <Subtitle>Conhecimentos</Subtitle>
           <Title>Tecnologias</Title>
         </div>
-        <div>
+        <div className="w-full flex justify-between">
           <ul>
-            {skills.map((skill) => (
+            {skills.frontend.map((skill) => (
               <li key={skill.title}>
-                <div className="flex items-center gap-2">
+                <div className="my-2 flex items-center gap-2">
+                  <Icon icon={skill.icon} />
+                  <span>{skill.title}</span>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <ul>
+            {skills.backend.map((skill) => (
+              <li key={skill.title}>
+                <div className="my-2 flex items-center gap-2">
+                  <Icon icon={skill.icon} />
                   <span>{skill.title}</span>
                 </div>
               </li>
