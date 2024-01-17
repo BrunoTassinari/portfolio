@@ -1,4 +1,4 @@
-import Mounted from "@baseComponents/Mounted";
+import Mounted from "@/app/components/_baseComponents/Mounted";
 import { getVariantClasses } from "./Button.variants";
 
 type ButtonProps = {

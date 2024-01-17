@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import Icon from "@baseComponents/Icon";
+import Icon from "@/app/components/_baseComponents/Icon";
 
 const ToggleTheme = () => {
   const { resolvedTheme, setTheme } = useTheme();
