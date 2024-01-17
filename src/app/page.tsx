@@ -7,16 +7,15 @@ import Paragraph from "@baseComponents/Paragraph";
 import Button from "@baseComponents/Button";
 import Icon from "@baseComponents/Icon";
 
+import HeaderSection from "@components/HeaderSection/HeaderSection";
+
 import skills from "@/app/constants/skills";
 
 export default function Home() {
   return (
     <section>
       <Card>
-        <div className="w-full flex flex-col justify-start">
-          <Subtitle>Meu nome é</Subtitle>
-          <Title>Bruno Tassinari</Title>
-        </div>
+        <HeaderSection subtitle="Meu nome é" title="Bruno Tassinari" />
         <Paragraph>
           Lorem Ipsum é simplesmente uma simulação de texto da indústria
           tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
@@ -46,10 +45,7 @@ export default function Home() {
         </div>
       </Card>
       <Card>
-        <div className="w-full flex flex-col justify-start">
-          <Subtitle>Informações</Subtitle>
-          <Title>Sobre Mim</Title>
-        </div>
+        <HeaderSection subtitle="Informações" title="Sobre Mim" />
         <Paragraph>
           Lorem Ipsum é simplesmente uma simulação de texto da indústria
           tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
@@ -63,17 +59,14 @@ export default function Home() {
         </Paragraph>
       </Card>
       <Card>
-        <div className="w-full flex flex-col justify-start">
-          <Subtitle>Conhecimentos</Subtitle>
-          <Title>Tecnologias</Title>
-        </div>
-        <div className="w-full flex justify-between">
+        <HeaderSection subtitle="Conhecimentos" title="Tecnologias" />
+        <div className="w-[95%] flex justify-between">
           <ul>
             {skills.frontend.map((skill) => (
               <li key={skill.title}>
                 <div className="my-2 flex items-center gap-2">
                   <Icon icon={skill.icon} />
-                  <span>{skill.title}</span>
+                  <Subtitle>{skill.title}</Subtitle>
                 </div>
               </li>
             ))}
@@ -83,7 +76,7 @@ export default function Home() {
               <li key={skill.title}>
                 <div className="my-2 flex items-center gap-2">
                   <Icon icon={skill.icon} />
-                  <span>{skill.title}</span>
+                  <Subtitle>{skill.title}</Subtitle>
                 </div>
               </li>
             ))}
