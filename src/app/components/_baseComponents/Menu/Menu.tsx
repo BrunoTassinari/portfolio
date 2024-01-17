@@ -1,7 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
-import Mounted from "@/app/components/_baseComponents/Mounted";
 import Icon from "@/app/components/_baseComponents/Icon";
 
 const menuAnimation = {
@@ -32,7 +31,7 @@ const Menu = () => {
   };
 
   return (
-    <Mounted>
+    <>
       <button onClick={toggleMenu}>
         <Icon
           icon="bars3BottomRight"
@@ -64,7 +63,7 @@ const Menu = () => {
           </motion.section>
         )}
       </AnimatePresence>
-    </Mounted>
+    </>
   );
 };
 

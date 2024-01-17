@@ -8,15 +8,9 @@ type ButtonProps = {
 
 const Button = ({ children, variant, ...rest }: ButtonProps) => {
   return (
-    <Mounted>
-      <button
-        type="button"
-        className={`${getVariantClasses(variant)}`}
-        {...rest}
-      >
-        {children}
-      </button>
-    </Mounted>
+    <button type="button" className={`${getVariantClasses(variant)}`} {...rest}>
+      {children}
+    </button>
   );
 };
 
