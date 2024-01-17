@@ -8,8 +8,8 @@ const Footer = () => {
     <Mounted>
       <footer className="bg-light-primary dark:bg-dark-primary border-t-[1px] border-t-light-tertiary dark:border-t-dark-tertiary">
         <nav className="w-[90%] py-3 m-auto container flex flex-col items-center justify-between">
-          <div className="flex justify-between items-center w-2/4">
-            <div className="flex items-center">
+          <section className="flex justify-between items-center w-2/4">
+            <section className="flex items-center">
               <Icon icon="github" />
               <a
                 className="underline text-xs"
@@ -18,8 +18,8 @@ const Footer = () => {
               >
                 Github
               </a>
-            </div>
-            <div className="flex items-center">
+            </section>
+            <section className="flex items-center">
               <Icon icon="linkedin" />
               <a
                 className="underline text-xs"
@@ -28,8 +28,8 @@ const Footer = () => {
               >
                 Linkedin
               </a>
-            </div>
-          </div>
+            </section>
+          </section>
           <span className="text-xs mt-2">
             &copy; 2024 - Desenvolvido por{" "}
             <a

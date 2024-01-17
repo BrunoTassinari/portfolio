@@ -8,10 +8,10 @@ type HeaderSectionProps = {
 
 const HeaderSection = ({ subtitle, title }: HeaderSectionProps) => {
   return (
-    <div className="w-full flex flex-col justify-start">
+    <section className="w-full flex flex-col justify-start">
       <Subtitle>{subtitle}</Subtitle>
       <Title>{title}</Title>
-    </div>
+    </section>
   );
 };
 

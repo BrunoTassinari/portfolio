@@ -23,7 +23,7 @@ export default function Home() {
           embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum é
           simplesmente uma simulação de texto.
         </Paragraph>
-        <div className="w-full flex items-start mt-3">
+        <section className="w-full flex items-start mt-3">
           <Button variant="secondary">
             <span>Entre em contato</span>
           </Button>
@@ -32,8 +32,8 @@ export default function Home() {
               Download CV
             </a>
           </Button>
-        </div>
-        <div className="w-full flex items-start mt-1">
+        </section>
+        <section className="w-full flex items-start mt-1">
           <Icon
             icon="linkedin"
             className="h-7 w-7  text-light-tertiary dark:text-dark-tertiary mr-1"
@@ -42,7 +42,7 @@ export default function Home() {
             icon="github"
             className="h-7 w-7 text-light-tertiary dark:text-dark-tertiary mr-1"
           />
-        </div>
+        </section>
       </Card>
       <Card>
         <HeaderSection subtitle="Informações" title="Sobre Mim" />
@@ -60,28 +60,32 @@ export default function Home() {
       </Card>
       <Card>
         <HeaderSection subtitle="Conhecimentos" title="Tecnologias" />
-        <div className="w-[95%] flex justify-between">
+        <section className="w-[96%] flex justify-between">
           <ul>
             {skills.frontend.map((skill) => (
               <li key={skill.title}>
-                <div className="my-2 flex items-center gap-2">
+                <section className="my-2 flex items-center gap-2">
                   <Icon icon={skill.icon} />
-                  <Subtitle>{skill.title}</Subtitle>
-                </div>
+                  <span className="m-0 text-[0.8rem] text-light-text-primary dark:text-dark-text-primary uppercase">
+                    {skill.title}
+                  </span>
+                </section>
               </li>
             ))}
           </ul>
           <ul>
             {skills.backend.map((skill) => (
               <li key={skill.title}>
-                <div className="my-2 flex items-center gap-2">
+                <section className="my-2 flex items-center gap-2">
                   <Icon icon={skill.icon} />
-                  <Subtitle>{skill.title}</Subtitle>
-                </div>
+                  <span className="m-0 text-[0.8rem] text-light-text-primary dark:text-dark-text-primary uppercase">
+                    {skill.title}
+                  </span>
+                </section>
               </li>
             ))}
           </ul>
-        </div>
+        </section>
       </Card>
     </section>
   );

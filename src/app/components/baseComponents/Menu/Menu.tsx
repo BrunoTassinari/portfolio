@@ -41,15 +41,15 @@ const Menu = () => {
       </button>
       <AnimatePresence>
         {open && (
-          <motion.div
+          <motion.section
             variants={menuAnimation}
             initial="initial"
             animate="animate"
             exit="exit"
             className="fixed left-0 top-0 w-full h-full origin-top bg-light-tertiary dark:bg-dark-tertiary"
           >
-            <div className="container w-[90%] py-4 m-auto flex justify-center flex-col">
-              <div className="flex justify-between">
+            <section className="container w-[90%] py-4 m-auto flex justify-center flex-col">
+              <section className="flex justify-between">
                 <span className="text-[1rem] font-bold text-ligth-text-contrast dark:text-dark-text-contrast">
                   Bruno Tassinari
                 </span>
@@ -59,9 +59,9 @@ const Menu = () => {
                     className="mr-1 h-6 w-6 text-ligth-text-contrast dark:text-dark-text-contrast"
                   />
                 </button>
-              </div>
-            </div>
-          </motion.div>
+              </section>
+            </section>
+          </motion.section>
         )}
       </AnimatePresence>
     </Mounted>
