@@ -1,4 +1,4 @@
-import Mounted from "../Mounted";
+import Mounted from "@baseComponents/Mounted";
 
 type SubtitleProps = {
   children: string;

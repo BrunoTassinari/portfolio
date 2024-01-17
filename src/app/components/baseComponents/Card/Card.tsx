@@ -1,6 +1,6 @@
 "use client";
 
-import Mounted from "../Mounted";
+import Mounted from "@baseComponents/Mounted";
 
 type CardProps = {
   children: React.ReactNode;
@@ -9,9 +9,9 @@ type CardProps = {
 const Card = ({ children }: CardProps) => {
   return (
     <Mounted>
-      <div className="container w-[88%] m-auto my-5 flex flex-col items-center justify-center gap-[20px]">
+      <section className="container w-[88%] m-auto my-8 flex flex-col items-center justify-center gap-[10px]">
         {children}
-      </div>
+      </section>
     </Mounted>
   );
 };

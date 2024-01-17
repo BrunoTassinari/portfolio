@@ -30,6 +30,9 @@
       "@components/*": [
         "./src/app/components/*"
       ],
+      "@baseComponents/*": [
+        "./src/app/components/baseComponents/*"
+      ],
     }
   },
   "include": [
@@ -37,7 +40,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/components/Paragraph/index.tss"
+    "src/app/components/baseComponents/Paragraph/index.tss"
   ],
   "exclude": [
     "node_modules"
