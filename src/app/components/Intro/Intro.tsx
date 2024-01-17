@@ -17,16 +17,7 @@ const Intro = () => {
           embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum é
           simplesmente uma simulação de texto.
         </Paragraph>
-        <section className="w-full flex items-start mt-3">
-          <Button variant="secondary">
-            <span>Entre em contato</span>
-          </Button>
-          <Button variant="primary">
-            <a href="/assets/files/BrunoTassinari.pdf" download>
-              Download CV
-            </a>
-          </Button>
-        </section>
+
         <section className="w-full flex items-start mt-1">
           <Icon
             icon="linkedin"
