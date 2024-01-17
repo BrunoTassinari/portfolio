@@ -1,9 +1,9 @@
-import Card from "@baseComponents/Card";
-import Icon from "@baseComponents/Icon";
+import Card from "@/app/components/_baseComponents/Card";
+import Icon from "@/app/components/_baseComponents/Icon";
 import HeaderSection from "@components/HeaderSection/HeaderSection";
 
 import skills from "@/app/constants/skills";
-import Mounted from "@baseComponents/Mounted";
+import Mounted from "@/app/components/_baseComponents/Mounted";
 
 const Skills = () => {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import Mounted from "@baseComponents/Mounted";
+import Mounted from "@/app/components/_baseComponents/Mounted";
 
 type CardProps = {
   children: React.ReactNode;

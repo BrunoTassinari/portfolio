@@ -1,7 +1,7 @@
 "use client";
 
-import Mounted from "@baseComponents/Mounted";
-import Icon from "@baseComponents/Icon/Icon";
+import Mounted from "@/app/components/_baseComponents/Mounted";
+import Icon from "@/app/components/_baseComponents/Icon/Icon";
 
 const Footer = () => {
   return (

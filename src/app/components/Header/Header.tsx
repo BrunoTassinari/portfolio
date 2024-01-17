@@ -1,8 +1,8 @@
 "use client";
 
 import ToggleTheme from "@components/ToggleTheme";
-import Mounted from "@baseComponents/Mounted";
-import Menu from "@baseComponents/Menu";
+import Mounted from "@/app/components/_baseComponents/Mounted";
+import Menu from "@/app/components/_baseComponents/Menu";
 
 const Header = () => {
   return (

@@ -1,9 +1,9 @@
-import Card from "@baseComponents/Card";
-import Paragraph from "@baseComponents/Paragraph";
-import Button from "@baseComponents/Button";
-import Icon from "@baseComponents/Icon";
+import Card from "@/app/components/_baseComponents/Card";
+import Paragraph from "@/app/components/_baseComponents/Paragraph";
+import Button from "@/app/components/_baseComponents/Button";
+import Icon from "@/app/components/_baseComponents/Icon";
 import HeaderSection from "@components/HeaderSection/HeaderSection";
-import Mounted from "../baseComponents/Mounted";
+import Mounted from "../_baseComponents/Mounted";
 
 const Intro = () => {
   return (
@@ -17,16 +17,7 @@ const Intro = () => {
           embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum é
           simplesmente uma simulação de texto.
         </Paragraph>
-        <section className="w-full flex items-start mt-3">
-          <Button variant="secondary">
-            <span>Entre em contato</span>
-          </Button>
-          <Button variant="primary">
-            <a href="/assets/files/BrunoTassinari.pdf" download>
-              Download CV
-            </a>
-          </Button>
-        </section>
+
         <section className="w-full flex items-start mt-1">
           <Icon
             icon="linkedin"

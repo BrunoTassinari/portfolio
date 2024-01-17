@@ -31,7 +31,7 @@
         "./src/app/components/*"
       ],
       "@baseComponents/*": [
-        "./src/app/components/baseComponents/*"
+        "src/app/components/_baseComponents/*"
       ],
     }
   },
@@ -40,7 +40,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/components/baseComponents/Paragraph/index.tss"
+    "src/app/components/_baseComponents/Paragraph/index.tss"
   ],
   "exclude": [
     "node_modules"
