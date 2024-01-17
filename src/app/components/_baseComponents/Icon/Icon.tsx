@@ -19,6 +19,7 @@ import {
   SunIcon,
   MoonIcon,
 } from "@heroicons/react/24/solid";
+import Mounted from "../Mounted";
 
 type IconProps = {
   icon: string;
@@ -48,10 +49,12 @@ const icons = {
 const Icon = ({ icon, ...rest }: IconProps) => {
   const IconTag = icons[icon];
   return (
-    <IconTag
-      className="h-6 w-6 text-light-tertiary dark:text-dark-tertiary mr-1"
-      {...rest}
-    />
+    <Mounted>
+      <IconTag
+        className="h-6 w-6 text-light-tertiary dark:text-dark-tertiary mr-1"
+        {...rest}
+      />
+    </Mounted>
   );
 };
 
