@@ -6,7 +6,7 @@ type MountedProps = {
   children: React.ReactNode;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-const Mounted = ({ children }: MountedProps) => {
+const Mounted = ({ children, ...rest }: MountedProps) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
