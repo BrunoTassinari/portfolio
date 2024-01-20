@@ -32,7 +32,7 @@
       ],
       "@baseComponents/*": [
         "src/app/components/_baseComponents/*"
-      ],
+      ]
     }
   },
   "include": [
