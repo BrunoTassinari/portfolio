@@ -17,11 +17,11 @@ const ProjectCard = ({ img }: ProjectCardProps) => {
           alt="Picture of the author"
           className="object-cover rounded-t-xl rounded-b-xl"
         />
-        <div className="px-4 py-1 w-[100%] bg-light-secondary dark:bg-dark-secondary rounded-b-xl absolute bottom-0 opacity-75">
-          <Subtitle>{"dada"}</Subtitle>
+        <div className="px-4 py-1 w-[100%] h-[100%] flex flex-col justify-center items-center  bg-light-secondary dark:bg-dark-secondary rounded-xl absolute bottom-0 opacity-50">
           <p className="text-lg font-bold text-light-text-primary dark:text-dark-text-primary truncate block capitalize">
             Product Name
           </p>
+          <Subtitle>{"dada"}</Subtitle>
         </div>
       </a>
     </div>
