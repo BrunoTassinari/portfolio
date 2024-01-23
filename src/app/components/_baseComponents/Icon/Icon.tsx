@@ -23,6 +23,7 @@ import {
 
 type IconProps = {
   icon: string;
+  children?: React.ReactNode;
 } & React.HTMLAttributes<HTMLElement>;
 
 const icons = {
@@ -47,13 +48,17 @@ const icons = {
   arrowTopRight: ArrowTopRightOnSquareIcon,
 } as any;
 
-const Icon = ({ icon, ...rest }: IconProps) => {
+const Icon = ({ icon, children, ...rest }: IconProps) => {
   const IconTag = icons[icon];
   return (
-    <IconTag
-      className="h-6 w-6 text-light-tertiary dark:text-dark-tertiary mr-1"
-      {...rest}
-    />
+    <div>
+      <IconTag
+        className="h-6 w-6 text-light-tertiary dark:text-dark-tertiary mr-1"
+        {...rest}
+      >
+        {children}
+      </IconTag>
+    </div>
   );
 };
 

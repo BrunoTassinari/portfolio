@@ -3,29 +3,30 @@ import React from "react";
 
 import Subtitle from "@baseComponents/Subtitle";
 import Icon from "../Icon";
+import ProjectInfo from "../ProjectInfo";
 
 type ProjectCardProps = {
   project: any;
 };
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
-  const images = require(`../../../../../public/assets/images/${project.image}.png`);
+  const img = require(`../../../../../public/assets/images/${project.image}.png`);
 
-  const [openProjectInfo, setOpenProjectInfo] = React.useState(false);
+  const [openDetails, setOpenDetails] = React.useState(false);
 
-  const handleProjectClick = (e: any) => {
-    setOpenProjectInfo((prevState) => !prevState);
+  const toogleOpenDetails = (e: any) => {
+    setOpenDetails((prevState) => !prevState);
   };
 
   return (
     <>
-      <li
+      <section
         className="w-[100%] bg-white shadow-md rounded-md duration-500 hover:scale-105 hover:shadow-xl relative"
-        onClick={handleProjectClick}
+        onClick={toogleOpenDetails}
       >
         <div>
           <Image
-            src={images}
+            src={img}
             alt={project.alt}
             className="object-cover rounded-md"
           />
@@ -36,38 +37,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <Subtitle>{project.subtitle}</Subtitle>
           </div>
         </div>
-      </li>
+      </section>
 
-      {openProjectInfo && (
-        <div className="fixed top-0 left-0 w-full h-full bg-light-secondary dark:bg-dark-secondary rounded-xl flex flex-col justify-center">
-          <div className="flex justify-between items-center px-4 py-1">
-            <p className="text-lg font-bold text-light-text-primary dark:text-dark-text-primary truncate block capitalize">
-              {project.name}
-            </p>
-            <button onClick={handleProjectClick}>
-              <Icon
-                icon="xMark"
-                className="mr-1 h-6 w-6 text-ligth-text-primary dark:text-dark-text-primary"
-              />
-            </button>
-          </div>
-          <div className="px-4 py-1">
-            <p className="text-base text-light-text-primary dark:text-dark-text-primary">
-              {project.description}
-            </p>
-          </div>
-          <div className="px-4 py-1">
-            <p className="text-base text-light-text-primary dark:text-dark-text-primary">
-              {project.stack}
-            </p>
-          </div>
-          <div className="px-4 py-1">
-            <p className="text-base text-light-text-primary dark:text-dark-text-primary">
-              {project.link}
-            </p>
-          </div>
-        </div>
-      )}
+      <ProjectInfo
+        project={project}
+        openDetails={openDetails}
+        toogleOpenDetails={toogleOpenDetails}
+      />
     </>
   );
 };
