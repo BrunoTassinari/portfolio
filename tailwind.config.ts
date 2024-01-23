@@ -21,12 +21,14 @@ const config: Config = {
         "dark-text-primary": "#FEFDFE",
         "dark-text-secondary": "#F3F8FE",
         "dark-text-contrast": "#47474E",
+        "black-rgba": "rgba(41,42,45, 0.7)",
+        "white-rgba": "rgba(254,253,254, 0.7)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      }, 
+      },
     },
   },
   plugins: [],

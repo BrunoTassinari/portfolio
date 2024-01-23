@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <Card>
       <HeaderSection subtitle="Conhecimentos" title="Tecnologias" />
-      <section className="w-[96%] flex justify-between">
+      <section className="w-full flex justify-between">
         <ul>
           {skills.frontend.map((skill) => (
             <li key={skill.title}>
