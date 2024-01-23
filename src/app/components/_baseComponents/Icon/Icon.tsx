@@ -18,6 +18,7 @@ import {
   XMarkIcon,
   SunIcon,
   MoonIcon,
+  ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/24/solid";
 
 type IconProps = {
@@ -43,6 +44,7 @@ const icons = {
   dotnet: Dotnet,
   postgresql: Postgresql,
   htmlcss: BodyText,
+  arrowTopRight: ArrowTopRightOnSquareIcon,
 } as any;
 
 const Icon = ({ icon, ...rest }: IconProps) => {

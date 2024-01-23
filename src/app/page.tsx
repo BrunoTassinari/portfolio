@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Header from "@components/Header";
 import Footer from "./components/Footer";
 import Providers from "./utils/providers";
+import Projects from "./components/Projects";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -29,6 +30,7 @@ export default function Home() {
         <Intro />
         <About />
         <Skills />
+        <Projects />
       </main>
       <Footer />
     </Providers>
