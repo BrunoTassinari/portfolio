@@ -1,7 +1,6 @@
 import Icon from "@baseComponents/Icon";
 import Image from "next/image";
-import Subtitle from "../Subtitle";
-import Button from "@baseComponents/Button";
+import Modal from "react-modal";
 
 type ProjectInfoProps = {
   project: any;
@@ -19,7 +18,10 @@ const ProjectInfo = ({
   if (!openDetails) return null;
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-light-secondary dark:bg-dark-secondary rounded-xl flex flex-col">
+    <Modal
+      isOpen={openDetails}
+      className="fixed top-0 left-0 w-full h-full bg-light-secondary dark:bg-dark-secondary rounded-xl flex flex-col"
+    >
       <div>
         <Image src={img} alt={project.alt} className="object-cover" />
       </div>
@@ -48,7 +50,7 @@ const ProjectInfo = ({
       </div>
 
       <div className="px-4 py-1"></div>
-    </div>
+    </Modal>
   );
 };
 
