@@ -12,10 +12,10 @@ type RootProps = {
   children: React.ReactNode;
 };
 
-export default function RootLayout({ children }: RootProps) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
-}
+const RootLayout = ({ children }: RootProps) => (
+  <html lang="en" suppressHydrationWarning>
+    <body className="overflow-hidden ove">{children}</body>
+  </html>
+);
+
+export default RootLayout;

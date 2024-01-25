@@ -7,8 +7,8 @@ const Projects = () => (
   <Card>
     <HeaderSection subtitle="Apredizado" title="Meus projetos" />
     <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14">
-      {projects.map((project, index) => (
-        <ProjectCard key={index} project={project} />
+      {projects.map((project) => (
+        <ProjectCard key={project.keyof} project={project} />
       ))}
     </section>
   </Card>

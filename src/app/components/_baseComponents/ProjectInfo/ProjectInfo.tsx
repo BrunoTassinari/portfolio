@@ -21,7 +21,7 @@ const ProjectInfo = ({
     <Modal
       ariaHideApp={false}
       isOpen={openDetails}
-      className="fixed top-0 left-0 w-[30%] h-[30%] bg-light-secondary dark:bg-dark-secondary rounded-xl flex flex-col"
+      className="fixed w-[30%] h-[30%] bg-light-secondary dark:bg-dark-secondary rounded-xl flex flex-col"
     >
       <div>
         <Image src={img} alt={project.alt} className="object-cover" />
