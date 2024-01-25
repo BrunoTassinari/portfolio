@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useTheme } from "next-themes";
-import Icon from "@/app/components/_baseComponents/Icon";
+import { useTheme } from 'next-themes';
+import Icon from '@/app/components/_baseComponents/Icon';
 
 const ToggleTheme = () => {
   const { resolvedTheme, setTheme } = useTheme();
@@ -11,10 +11,10 @@ const ToggleTheme = () => {
       aria-label="Toggle Dark Mode"
       type="button"
       className="flex items-center justify-center rounded-lg p-1 transition-colors hover:bg-zinc-100 dark:hover:bg-zinc-700"
-      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
       <Icon
-        icon={resolvedTheme === "dark" ? "sun" : "moon"}
+        icon={resolvedTheme === 'dark' ? 'sun' : 'moon'}
         className="h-6 w-6 text-light-text-primary dark:text-dark-text-primary "
       />
     </button>

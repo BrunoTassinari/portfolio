@@ -10,20 +10,19 @@ import {
   Nodejs,
   Mongodb,
   Docker,
-} from "styled-icons/boxicons-logos";
-import { Dotnet, Postgresql } from "styled-icons/simple-icons";
-import { BodyText } from "styled-icons/bootstrap";
+} from 'styled-icons/boxicons-logos';
+import { Dotnet, Postgresql } from 'styled-icons/simple-icons';
+import { BodyText } from 'styled-icons/bootstrap';
 import {
   Bars3BottomRightIcon,
   XMarkIcon,
   SunIcon,
   MoonIcon,
   ArrowTopRightOnSquareIcon,
-} from "@heroicons/react/24/solid";
+} from '@heroicons/react/24/solid';
 
 type IconProps = {
   icon: string;
-  children?: React.ReactNode;
 } & React.HTMLAttributes<HTMLElement>;
 
 const icons = {

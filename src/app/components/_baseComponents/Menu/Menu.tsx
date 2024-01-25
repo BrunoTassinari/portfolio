@@ -1,7 +1,7 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { AnimatePresence, motion } from 'framer-motion';
+import { useState } from 'react';
 
-import Icon from "@/app/components/_baseComponents/Icon";
+import Icon from '@/app/components/_baseComponents/Icon';
 
 const menuAnimation = {
   initial: {
@@ -32,7 +32,7 @@ const Menu = () => {
 
   return (
     <>
-      <button onClick={toggleMenu}>
+      <button type="button" onClick={toggleMenu}>
         <Icon
           icon="bars3BottomRight"
           className="mr-1 h-6 w-6 text-light-text-primary dark:text-dark-text-primary"
@@ -52,7 +52,7 @@ const Menu = () => {
                 <span className="text-[1rem] font-bold text-ligth-text-contrast dark:text-dark-text-contrast">
                   Bruno Tassinari
                 </span>
-                <button onClick={toggleMenu}>
+                <button type="button" onClick={toggleMenu}>
                   <Icon
                     icon="xMark"
                     className="mr-1 h-6 w-6 text-ligth-text-contrast dark:text-dark-text-contrast"

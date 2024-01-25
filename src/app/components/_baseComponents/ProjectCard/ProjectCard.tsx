@@ -1,9 +1,8 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
-import Subtitle from "@baseComponents/Subtitle";
-import Icon from "../Icon";
-import ProjectInfo from "../ProjectInfo";
+import Subtitle from '@baseComponents/Subtitle';
+import ProjectInfo from '../ProjectInfo';
 
 type ProjectCardProps = {
   project: any;
@@ -14,13 +13,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
   const [openDetails, setOpenDetails] = React.useState(false);
 
-  const toogleOpenDetails = (e: any) => {
+  const toogleOpenDetails = () => {
     setOpenDetails((prevState) => !prevState);
   };
 
   return (
     <>
-      <section
+      <button
+        type="button"
         className="w-[100%] bg-white shadow-md rounded-md duration-500 hover:scale-105 hover:shadow-xl relative"
         onClick={toogleOpenDetails}
       >
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <Subtitle>{project.subtitle}</Subtitle>
           </div>
         </div>
-      </section>
+      </button>
 
       <ProjectInfo
         project={project}

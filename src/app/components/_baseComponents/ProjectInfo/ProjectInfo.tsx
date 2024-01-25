@@ -1,6 +1,6 @@
-import Icon from "@baseComponents/Icon";
-import Image from "next/image";
-import Modal from "react-modal";
+import Icon from '@baseComponents/Icon';
+import Image from 'next/image';
+import Modal from 'react-modal';
 
 type ProjectInfoProps = {
   project: any;
@@ -19,8 +19,9 @@ const ProjectInfo = ({
 
   return (
     <Modal
+      ariaHideApp={false}
       isOpen={openDetails}
-      className="fixed top-0 left-0 w-full h-full bg-light-secondary dark:bg-dark-secondary rounded-xl flex flex-col"
+      className="fixed top-0 left-0 w-[30%] h-[30%] bg-light-secondary dark:bg-dark-secondary rounded-xl flex flex-col"
     >
       <div>
         <Image src={img} alt={project.alt} className="object-cover" />
@@ -34,7 +35,7 @@ const ProjectInfo = ({
             <Icon icon="arrowTopRight" />
           </a>
         </div>
-        <button onClick={toogleOpenDetails}>
+        <button type="button" onClick={toogleOpenDetails}>
           <Icon icon="xMark" />
         </button>
       </div>
@@ -49,7 +50,7 @@ const ProjectInfo = ({
         </p>
       </div>
 
-      <div className="px-4 py-1"></div>
+      <div className="px-4 py-1" />
     </Modal>
   );
 };

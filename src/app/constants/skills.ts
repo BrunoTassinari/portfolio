@@ -1,54 +1,54 @@
 const skills = {
   frontend: [
     {
-      title: "HTML/CSS",
-      icon: "htmlcss",
+      title: 'HTML/CSS',
+      icon: 'htmlcss',
     },
     {
-      title: "Tailwind CSS",
-      icon: "tailwind",
+      title: 'Tailwind CSS',
+      icon: 'tailwind',
     },
     {
-      title: "Next/ReactJS",
-      icon: "react",
+      title: 'Next/ReactJS',
+      icon: 'react',
     },
     {
-      title: "Angular",
-      icon: "angular",
+      title: 'Angular',
+      icon: 'angular',
     },
     {
-      title: "JavaScript",
-      icon: "javascript",
+      title: 'JavaScript',
+      icon: 'javascript',
     },
     {
-      title: "TypeScript",
-      icon: "typescript",
+      title: 'TypeScript',
+      icon: 'typescript',
     },
   ],
   backend: [
     {
-      title: "Docker",
-      icon: "docker",
+      title: 'Docker',
+      icon: 'docker',
     },
     {
-      title: "Express/NodeJS",
-      icon: "nodejs",
+      title: 'Express/NodeJS',
+      icon: 'nodejs',
     },
     {
-      title: "PostgreSQL",
-      icon: "postgresql",
+      title: 'PostgreSQL',
+      icon: 'postgresql',
     },
     {
-      title: "Mongo DB",
-      icon: "mongodb",
+      title: 'Mongo DB',
+      icon: 'mongodb',
     },
     {
-      title: ".NET",
-      icon: "dotnet",
+      title: '.NET',
+      icon: 'dotnet',
     },
     {
-      title: "Java",
-      icon: "java",
+      title: 'Java',
+      icon: 'java',
     },
   ],
 };
