@@ -1,6 +1,6 @@
-import HeaderSection from '@components/HeaderSection/HeaderSection';
-import Card from '@/app/components/_baseComponents/Card';
-import Paragraph from '@/app/components/_baseComponents/Paragraph';
+import Card from '@components/Card';
+import Paragraph from '@components/Paragraph';
+import HeaderSection from '@/app/components/HeaderSection';
 
 const About = () => (
   <Card>

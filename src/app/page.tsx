@@ -1,14 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Header from '@components/Header';
-import Intro from './components/Intro';
-import About from './components/About';
-import Skills from './components/Skills';
-
-import Footer from './components/Footer';
+import MainContent from '@layouts/_MainContent';
 import Providers from './utils/providers';
-import Projects from './components/Projects';
 
 const Home = () => {
   const [mounted, setMounted] = useState(false);
@@ -19,26 +13,7 @@ const Home = () => {
 
   return (
     <Providers>
-      <Header />
-      <main
-        className="
-        w-full
-        flex
-        flex-col
-        items-center
-        justify-center
-      bg-light-primary
-      text-light-text-primary
-      dark:bg-dark-primary
-      dark:text-dark-text-primary
-      "
-      >
-        <Intro />
-        <About />
-        <Skills />
-        <Projects />
-      </main>
-      <Footer />
+      <MainContent />
     </Providers>
   );
 };

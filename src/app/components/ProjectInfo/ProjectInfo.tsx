@@ -1,6 +1,6 @@
-import Icon from '@baseComponents/Icon';
 import Image from 'next/image';
 import Modal from 'react-modal';
+import Icon from '@components/Icon';
 
 type ProjectInfoProps = {
   project: any;

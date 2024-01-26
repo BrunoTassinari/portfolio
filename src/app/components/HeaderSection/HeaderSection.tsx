@@ -1,5 +1,5 @@
-import Subtitle from '@/app/components/_baseComponents/Subtitle';
-import Title from '@/app/components/_baseComponents/Title';
+import Subtitle from '@components/Subtitle';
+import Title from '@components/Title';
 
 type HeaderSectionProps = {
   subtitle: string;

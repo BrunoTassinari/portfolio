@@ -1,7 +1,7 @@
 'use client';
 
+import Menu from '@components/Menu';
 import ToggleTheme from '@components/ToggleTheme';
-import Menu from '@/app/components/_baseComponents/Menu';
 
 const Header = () => (
   <header className="bg-light-primary dark:bg-dark-primary border-b-light-tertiary dark:border-b-dark-tertiary border-b-[1px]">

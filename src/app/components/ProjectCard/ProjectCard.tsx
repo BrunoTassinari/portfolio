@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 
-import Subtitle from '@baseComponents/Subtitle';
-import ProjectInfo from '../ProjectInfo';
+import Subtitle from '@components/Subtitle';
+import ProjectInfo from '@components/ProjectInfo';
 
 type ProjectCardProps = {
   project: any;

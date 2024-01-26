@@ -1,7 +1,7 @@
-import HeaderSection from '@components/HeaderSection/HeaderSection';
-import Card from '@/app/components/_baseComponents/Card';
-import Paragraph from '@/app/components/_baseComponents/Paragraph';
-import Icon from '@/app/components/_baseComponents/Icon';
+import HeaderSection from '@components/HeaderSection';
+import Card from '@components/Card';
+import Paragraph from '@components/Paragraph';
+import Icon from '@components/Icon';
 
 const Intro = () => (
   <Card>

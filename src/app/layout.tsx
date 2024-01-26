@@ -14,7 +14,7 @@ type RootProps = {
 
 const RootLayout = ({ children }: RootProps) => (
   <html lang="en" suppressHydrationWarning>
-    <body className="overflow-hidden ove">{children}</body>
+    <body className={inter.className}>{children}</body>
   </html>
 );
 
