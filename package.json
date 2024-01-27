@@ -9,15 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.1",
     "framer-motion": "^10.17.9",
     "next": "14.0.4",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-modal": "^3.16.1",
     "styled-components": "^6.1.6",
-    "styled-icons": "^10.47.0",
-    "@heroicons/react": "^2.1.1"
+    "styled-icons": "^10.47.0"
   },
   "devDependencies": {
     "@types/node": "^20",

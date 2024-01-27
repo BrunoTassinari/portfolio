@@ -24,6 +24,8 @@ const MainContent = () => (
       <Intro />
       <About />
       <Skills />
+      <Skills />
+
       <Projects />
     </main>
     <Footer />
