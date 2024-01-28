@@ -39,6 +39,9 @@
         "namedComponents": "arrow-function",
         "unnamedComponents": "arrow-function"
       }
-    ]
+    ],
+    "import/no-dynamic-require": 0,
+    "global-require": 0,
+    "@typescript-eslint/no-var-requires": 0
   }
 }
