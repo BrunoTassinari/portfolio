@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 type ModalProps = {
   showModal: boolean;
@@ -10,12 +11,20 @@ const Modal = ({ showModal, children }: ModalProps) => {
     document.body.style.overflow = showModal ? 'hidden' : 'auto';
   }, [showModal]);
 
-  if (!showModal) return null;
-
   return (
-    <div className="w-screen h-screen bg-light-secondary dark:bg-dark-secondary fixed top-0 right-0">
-      {children}
-    </div>
+    <AnimatePresence>
+      {showModal && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4, ease: 'easeInOut' }}
+          className="w-screen h-screen bg-light-secondary dark:bg-dark-secondary fixed top-0 right-0"
+        >
+          {children}
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
