@@ -30,12 +30,18 @@
       "@components/*": [
         "./src/app/components/*"
       ],
+      "@baseComponents/*": [
+        "./src/app/components/baseComponents*"
+      ],
       "@layouts/*": [
         "./src/app/layouts/*"
       ],
       "@images/*": [
         "../public/assets/images/*"
-      ]
+      ],
+      "@pages/*": [
+        "./src/app/pages/*"
+      ],
     }
   },
   "include": [
@@ -43,7 +49,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/components/Paragraph/index.tss"
+    "src/app/components/_baseComponents/Paragraph/index.tss"
   ],
   "exclude": [
     "node_modules"

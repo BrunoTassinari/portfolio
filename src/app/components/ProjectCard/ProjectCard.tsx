@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 
-import Subtitle from '@components/Subtitle';
+import Subtitle from '@/app/components/_baseComponents/Subtitle';
 
-import Modal from '@components/Modal';
-import Icon from '@components/Icon';
+import Modal from '@/app/components/_baseComponents/Modal';
+import Icon from '@/app/components/_baseComponents/Icon';
 
 type ProjectCardProps = {
   project: any;

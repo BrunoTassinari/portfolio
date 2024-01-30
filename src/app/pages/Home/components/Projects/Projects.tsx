@@ -1,7 +1,7 @@
-import Card from '@components/Card';
+import Card from '@/app/components/_baseComponents/Card';
 import ProjectCard from '@/app/components/ProjectCard';
 import projects from '@/app/constants/projects';
-import HeaderSection from '../../components/HeaderSection';
+import HeaderSection from '../../../../components/HeaderSection';
 
 const Projects = () => (
   <Card>

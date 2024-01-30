@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 
-import Icon from '@components/Icon';
+import Icon from '@/app/components/_baseComponents/Icon';
 
 const menuAnimation = {
   initial: {

@@ -1,6 +1,6 @@
 'use client';
 
-import Icon from '@components/Icon';
+import Icon from '@/app/components/_baseComponents/Icon';
 
 const Footer = () => (
   <footer className="bg-light-primary dark:bg-dark-primary border-t-[1px] border-t-light-tertiary dark:border-t-dark-tertiary">

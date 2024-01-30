@@ -1,12 +1,12 @@
-import Header from '../Header';
-import Intro from '../Intro';
-import About from '../About';
-import Skills from '../Skills';
-import Projects from '../Projects';
-import Footer from '../Footer';
-import Experience from '../Experience';
+import Header from './components/Header';
+import Intro from './components/Intro';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Footer from './components/Footer';
 
-const MainContent = () => (
+const Home = () => (
   <>
     <Header />
     <main
@@ -32,4 +32,4 @@ const MainContent = () => (
   </>
 );
 
-export default MainContent;
+export default Home;
