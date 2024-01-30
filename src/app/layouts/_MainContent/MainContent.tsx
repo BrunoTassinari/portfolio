@@ -4,6 +4,7 @@ import About from '../About';
 import Skills from '../Skills';
 import Projects from '../Projects';
 import Footer from '../Footer';
+import Experience from '../Experience';
 
 const MainContent = () => (
   <>
@@ -24,9 +25,8 @@ const MainContent = () => (
       <Intro />
       <About />
       <Skills />
-      <Skills />
-
       <Projects />
+      <Experience />
     </main>
     <Footer />
   </>
