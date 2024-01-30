@@ -30,7 +30,7 @@ const Footer = () => (
         </section>
       </section>
       <span className="text-xs mt-2">
-        &copy; 2024 - Desenvolvido por
+        &copy; 2024 - Desenvolvido por{' '}
         <a
           className="underline text-light-tertiary dark:text-dark-tertiary"
           target="_blank"
