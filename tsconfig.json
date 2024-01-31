@@ -31,7 +31,7 @@
         "./src/app/components/*"
       ],
       "@baseComponents/*": [
-        "./src/app/components/baseComponents*"
+        "./src/app/components/_baseComponents*"
       ],
       "@layouts/*": [
         "./src/app/layouts/*"

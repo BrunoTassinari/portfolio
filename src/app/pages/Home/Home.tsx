@@ -9,19 +9,7 @@ import Footer from './components/Footer';
 const Home = () => (
   <>
     <Header />
-    <main
-      className="
-    w-full
-    flex
-    flex-col
-    items-center
-    justify-center
-  bg-light-primary
-  text-light-text-primary
-  dark:bg-dark-primary
-  dark:text-dark-text-primary
-  "
-    >
+    <main className="w-full flex flex-col items-center justify-center first:bg-light-primary text-light-text-primary dark:bg-dark-primary dark:text-dark-text-primary">
       <Intro />
       <About />
       <Skills />
