@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Icon from '@/app/components/_baseComponents/Icon';
 import anchors from '@/app/constants/anchors';
@@ -31,6 +31,10 @@ const Menu = () => {
     setOpen((prevState) => !prevState);
   };
 
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : 'auto';
+  }, [open]);
+
   return (
     <>
       <button type="button" onClick={toggleMenu}>
@@ -46,7 +50,7 @@ const Menu = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 w-full h-full origin-top bg-light-tertiary dark:bg-dark-tertiary z-10"
+            className="fixed left-0 top-0 w-full h-full origin-top bg-light-tertiary dark:bg-dark-tertiary"
           >
             <section className="container w-[90%] py-4 m-auto flex justify-center flex-col">
               <section className="flex flex-col gap-20">
