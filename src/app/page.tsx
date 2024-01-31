@@ -1,10 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import MainContent from '@layouts/_MainContent';
+import Home from '@pages/Home';
 import Providers from './utils/providers';
 
-const Home = () => {
+const RootPage = () => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
@@ -13,9 +13,9 @@ const Home = () => {
 
   return (
     <Providers>
-      <MainContent />
+      <Home />
     </Providers>
   );
 };
 
-export default Home;
+export default RootPage;

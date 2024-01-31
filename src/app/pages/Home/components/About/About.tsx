@@ -1,5 +1,5 @@
-import Card from '@components/Card';
-import Paragraph from '@components/Paragraph';
+import Paragraph from '@/app/components/_baseComponents/Paragraph';
+import Card from '@/app/components/_baseComponents/Card';
 import HeaderSection from '@/app/components/HeaderSection';
 
 const About = () => (

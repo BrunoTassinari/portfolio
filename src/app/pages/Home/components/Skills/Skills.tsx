@@ -1,6 +1,6 @@
-import Card from '@components/Card';
-import Icon from '@components/Icon';
 import HeaderSection from '@components/HeaderSection';
+import Icon from '@/app/components/_baseComponents/Icon';
+import Card from '@/app/components/_baseComponents/Card';
 
 import skills from '@/app/constants/skills';
 

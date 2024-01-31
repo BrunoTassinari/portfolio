@@ -1,10 +1,10 @@
-const experience = [
+export default [
   {
     id: '1',
     role: 'Fullstack developer',
     company: 'Kbase',
     period: 'Dez 2021 - Atual',
-    stack: ['React', 'NodeJS', 'TypeScript', '.NET', 'PostgreSQL', 'Angular'],
+    stacks: ['React', 'NodeJS', 'TypeScript', '.NET', 'PostgreSQL', 'Angular'],
     topics: [
       'Desenvolvimento de novas features.',
       'Manutenção de código e refatoração.',
@@ -18,15 +18,13 @@ const experience = [
     role: 'Fullstack developer',
     company: 'Tassinari',
     period: 'Freelancer',
-    stack: ['React', 'Node', 'TypeScript', 'GraphQL', 'PostgreSQL'],
+    stacks: ['React', 'Node', 'TypeScript', 'GraphQL', 'PostgreSQL'],
     topics: [
-      'Rotatividade de projetos',
-      'Manutenção de código',
-      'Testes unitários',
-      'Code review',
+      'Criação de landing pages',
+      'Consultoria',
+      'Desenvolvimento de projetos SPA',
+      'Desenvolvimento de APIs',
     ],
     default: true,
   },
 ];
-
-export default experience;
