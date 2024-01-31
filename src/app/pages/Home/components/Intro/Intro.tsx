@@ -4,7 +4,7 @@ import Paragraph from '@/app/components/_baseComponents/Paragraph';
 import Icon from '@/app/components/_baseComponents/Icon';
 
 const Intro = () => (
-  <Card>
+  <Card id="intro" className="mt-[90px]">
     <HeaderSection subtitle="Meu nome é" title="Bruno Tassinari" />
     <Paragraph>
       Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica

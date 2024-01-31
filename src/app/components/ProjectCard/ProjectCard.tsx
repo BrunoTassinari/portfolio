@@ -20,10 +20,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   };
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden">
       <button
         type="button"
-        className="w-[100%] bg-white shadow-md rounded-md duration-500 hover:scale-105 hover:shadow-xl relative"
+        className="w-[100%] bg-white shadow-md rounded-md duration-500 hover:scale-105 hover:shadow-xl"
         onClick={toogleOpenDetails}
       >
         <div>
@@ -32,7 +32,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             alt={project.alt}
             className="object-cover rounded-md"
           />
-          <div className="px-4 py-1 w-[100%] h-[100%] flex flex-col justify-center items-center bg-white-rgba dark:bg-black-rgba absolute bottom-0 rounded-md">
+          <div className="px-4 py-1 w-[100%] h-[100%] flex flex-col justify-center items-center bg-white-rgba dark:bg-black-rgba absolute bottom-0 rounded-md z-1">
             <p className="text-lg font-bold text-light-text-primary dark:text-dark-text-primary truncate block capitalize">
               {project.name}
             </p>
