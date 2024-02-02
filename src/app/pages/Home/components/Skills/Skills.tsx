@@ -1,11 +1,11 @@
-import HeaderSection from '@components/HeaderSection';
+import HeaderSection from '@/app/components/SectionHeader';
 import Icon from '@/app/components/_baseComponents/Icon';
-import Card from '@/app/components/_baseComponents/Card';
+import Card from '@/app/components/_baseComponents/SectionContainer';
 
 import skills from '@/app/constants/skills';
 
 const Skills = () => (
-  <Card>
+  <Card id="skills">
     <HeaderSection subtitle="Conhecimentos" title="Tecnologias" />
     <section className="w-full flex justify-between">
       <ul>

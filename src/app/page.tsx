@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'next-themes';
 import Home from '@pages/Home';
+import BaseLayout from './layouts/BaseLayout';
 
 const RootPage = () => {
   const [mounted, setMounted] = useState(false);
@@ -13,7 +14,9 @@ const RootPage = () => {
 
   return (
     <ThemeProvider attribute="class">
-      <Home />
+      <BaseLayout>
+        <Home />
+      </BaseLayout>
     </ThemeProvider>
   );
 };
