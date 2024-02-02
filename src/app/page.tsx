@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { ThemeProvider } from 'next-themes';
 import Home from '@pages/Home';
-import Providers from './utils/providers';
 
 const RootPage = () => {
   const [mounted, setMounted] = useState(false);
@@ -12,9 +12,9 @@ const RootPage = () => {
   if (!mounted) return null;
 
   return (
-    <Providers>
+    <ThemeProvider attribute="class">
       <Home />
-    </Providers>
+    </ThemeProvider>
   );
 };
 
