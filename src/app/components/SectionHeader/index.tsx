@@ -1,6 +1,3 @@
-import Subtitle from '@/app/components/_baseComponents/Subtitle';
-import Title from '@/app/components/_baseComponents/Title';
-
 type SectionHeaderProps = {
   subtitle: string;
   title: string;
@@ -8,8 +5,12 @@ type SectionHeaderProps = {
 
 const SectionHeader = ({ subtitle, title }: SectionHeaderProps) => (
   <section className="w-full flex flex-col justify-start">
-    <Subtitle>{subtitle}</Subtitle>
-    <Title>{title}</Title>
+    <span className="m-0 text-[0.8rem] text-strokeBlue dark:text-lightBlue uppercase">
+      {subtitle}
+    </span>
+    <h1 className="m-0 text-[1.5rem] font-bold uppercase text-darkBlue dark:text-white">
+      {title}
+    </h1>
   </section>
 );
 

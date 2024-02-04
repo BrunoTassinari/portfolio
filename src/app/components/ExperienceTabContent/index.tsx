@@ -1,4 +1,4 @@
-import Icon from '@components/_baseComponents/Icon';
+import Icon from '@/app/components/baseComponents/Icon';
 import { TabsContent } from '@/app/components/ui/tabs';
 
 type ExperienceTabContentProps = {
@@ -10,7 +10,9 @@ const ExperienceTabContent = ({ experiences }: ExperienceTabContentProps) => (
     {experiences.map((e: any) => (
       <TabsContent key={e.company} value={e.company}>
         <div className="flex flex-col">
-          <h3 className="text-[1.3rem] font-semibold">{e.role}</h3>
+          <h3 className="text-[1.3rem] font-semibold text-darkBlue dark:text-white">
+            {e.role}
+          </h3>
           <span className="text-sm text-smoothGray dark:text-whiteIce">
             {e.period}
           </span>

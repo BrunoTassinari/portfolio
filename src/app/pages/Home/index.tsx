@@ -1,21 +1,22 @@
+import SectionContainer from '@components/SectionContainer';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 
-import SectionContainer from '@/app/components/_baseComponents/SectionContainer';
-import Paragraph from '@/app/components/_baseComponents/Paragraph';
-import Icon from '@/app/components/_baseComponents/Icon';
+import Icon from '@/app/components/baseComponents/Icon';
+import SectionHeader from '@/app/components/SectionHeader';
 
 const Home = () => (
   <>
-    <SectionContainer subtitle="Meu nome é" title="Bruno Tassinari">
-      <Paragraph>
+    <SectionContainer className="mt-[80px]">
+      <SectionHeader title="Bruno Tassinari" subtitle="Meu nome é" />
+      <p className="text-[0.9rem] text-smoothGray dark:text-whiteIce text-justify">
         Lorem Ipsum é simplesmente uma simulação de texto da indústria
         tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
         quando um impressor desconhecido pegou uma bandeja de tipos e os
         embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum é
         simplesmente uma simulação de texto.
-      </Paragraph>
+      </p>
 
       <section className="w-full flex items-start mt-1">
         <Icon
@@ -28,8 +29,9 @@ const Home = () => (
         />
       </section>
     </SectionContainer>
-    <SectionContainer id="about" subtitle="Informações" title="Sobre Mim">
-      <Paragraph>
+    <SectionContainer id="about">
+      <SectionHeader subtitle="Informações" title="Sobre Mim" />
+      <p className="text-[0.9rem] text-smoothGray dark:text-whiteIce text-justify">
         Lorem Ipsum é simplesmente uma simulação de texto da indústria
         tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
         quando um impressor desconhecido pegou uma bandeja de tipos e os
@@ -39,7 +41,7 @@ const Home = () => (
         utilizado desde o século XVI, quando um impressor desconhecido pegou uma
         bandeja de tipos e os embaralhou para fazer um livro de modelos de
         tipos. Lorem Ipsum é simplesmente uma simulação de texto.
-      </Paragraph>
+      </p>
     </SectionContainer>
 
     <Skills />

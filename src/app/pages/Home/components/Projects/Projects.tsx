@@ -1,4 +1,4 @@
-import Card from '@/app/components/_baseComponents/SectionContainer';
+import Card from '@/app/components/baseComponents/SectionContainer';
 import ProjectCard from '@/app/components/ProjectCard';
 import projects from '@/app/constants/projects';
 import HeaderSection from '../../../../components/SectionHeader';

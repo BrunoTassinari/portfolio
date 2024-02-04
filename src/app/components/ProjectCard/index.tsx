@@ -5,8 +5,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import Subtitle from '@/app/components/_baseComponents/Subtitle';
 
-import Modal from '@/app/components/_baseComponents/Modal';
-import Icon from '@/app/components/_baseComponents/Icon';
+import Modal from '@/app/components/baseComponents/Modal';
+import Icon from '@/app/components/baseComponents/Icon';
 
 type ProjectCardProps = {
   project: any;
