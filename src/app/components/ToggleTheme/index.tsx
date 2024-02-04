@@ -15,7 +15,7 @@ const ToggleTheme = () => {
     >
       <Icon
         icon={resolvedTheme === 'dark' ? 'sun' : 'moon'}
-        className="h-6 w-6 text-light-text-primary dark:text-dark-text-primary "
+        className="h-6 w-6 text-darkBlue dark:text-white "
       />
     </button>
   );

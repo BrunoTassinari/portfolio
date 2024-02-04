@@ -3,7 +3,7 @@ type ParagraphProps = {
 };
 
 const Paragraph = ({ children }: ParagraphProps) => (
-  <p className="text-[0.9rem] text-light-text-secondary dark:text-dark-text-secondary text-justify">
+  <p className="text-[0.9rem] text-smoothGray dark:text-whiteIce text-justify">
     {children}
   </p>
 );

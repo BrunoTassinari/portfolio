@@ -13,7 +13,7 @@ const Skills = () => (
           <li key={skill.title}>
             <section className="my-2 flex items-center gap-2">
               <Icon icon={skill.icon} />
-              <span className="m-0 text-[0.8rem] text-light-text-primary dark:text-dark-text-primary uppercase">
+              <span className="m-0 text-[0.8rem] text-darkBlue dark:text-white uppercase">
                 {skill.title}
               </span>
             </section>
@@ -25,7 +25,7 @@ const Skills = () => (
           <li key={skill.title}>
             <section className="my-2 flex items-center gap-2">
               <Icon icon={skill.icon} />
-              <span className="m-0 text-[0.8rem] text-light-text-primary dark:text-dark-text-primary uppercase">
+              <span className="m-0 text-[0.8rem] text-darkBlue dark:text-white uppercase">
                 {skill.title}
               </span>
             </section>

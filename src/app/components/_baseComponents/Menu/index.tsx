@@ -40,7 +40,7 @@ const Menu = () => {
       <button type="button" onClick={toggleMenu}>
         <Icon
           icon="bars3BottomRight"
-          className="mr-1 h-6 w-6 text-light-text-primary dark:text-dark-text-primary"
+          className="mr-1 h-6 w-6 text-darkBlue dark:text-white"
         />
       </button>
       <AnimatePresence>
@@ -50,18 +50,18 @@ const Menu = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 w-full h-full origin-top bg-light-tertiary dark:bg-dark-tertiary"
+            className="fixed left-0 top-0 w-full h-full origin-top bg-strokeBlue dark:bg-lightBlue"
           >
             <section className="container w-[90%] py-4 m-auto flex justify-center flex-col">
               <section className="flex flex-col gap-20">
                 <div className="flex justify-between">
-                  <span className="text-[1.4rem] font-bold text-ligth-text-contrast dark:text-dark-text-contrast">
+                  <span className="text-[1.4rem] font-bold text-white dark:text-gray">
                     Bruno Tassinari
                   </span>
                   <button type="button" onClick={toggleMenu}>
                     <Icon
                       icon="xMark"
-                      className="mr-1 h-8 w-8 text-ligth-text-contrast dark:text-dark-text-contrast"
+                      className="mr-1 h-8 w-8 text-white dark:text-gray"
                     />
                   </button>
                 </div>
@@ -70,11 +70,11 @@ const Menu = () => {
                     {anchors.map((anchor) => (
                       <li
                         key={anchor.id}
-                        className="text-center hover:transform hover:scale-110 transition-all hover:text-dark-tertiary"
+                        className="text-center hover:transform hover:scale-110 transition-all hover:text-lightBlue"
                       >
                         <a
                           href={`#${anchor.id}`}
-                          className="text-[1.3rem] font-bold text-ligth-text-contrast dark:text-dark-text-contrast "
+                          className="text-[1.3rem] font-bold text-white dark:text-gray "
                           onClick={toggleMenu}
                         >
                           {anchor.label}

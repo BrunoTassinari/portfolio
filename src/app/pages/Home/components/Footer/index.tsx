@@ -3,7 +3,7 @@
 import Icon from '@/app/components/_baseComponents/Icon';
 
 const Footer = () => (
-  <footer className="bg-light-primary dark:bg-dark-primary border-t-[1px] border-t-light-tertiary dark:border-t-dark-tertiary">
+  <footer className="bg-white dark:bg-gray border-t-[1px] border-t-strokeBlue dark:border-t-lightBlue">
     <nav className="w-[90%] py-3 m-auto container flex flex-col items-center justify-between">
       <section className="flex justify-between items-center w-2/4">
         <section className="flex items-center">
@@ -32,7 +32,7 @@ const Footer = () => (
       <span className="text-xs mt-2">
         &copy; 2024 - Desenvolvido por{' '}
         <a
-          className="underline text-light-tertiary dark:text-dark-tertiary"
+          className="underline text-strokeBlue dark:text-lightBlue"
           target="_blank"
           href="https://github.com/BrunoTassinari"
           rel="noreferrer"

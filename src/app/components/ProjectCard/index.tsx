@@ -41,8 +41,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               alt={project.alt}
               className="object-cover rounded-md"
             />
-            <div className="fixed  px-4 py-1 flex flex-col justify-center items-center bg-white-rgba dark:bg-black-rgba rounded-md">
-              <p className="text-lg font-bold text-light-text-primary dark:text-dark-text-primary truncate block capitalize">
+            <div className="fixed  px-4 py-1 flex flex-col justify-center items-center bg-transparentWhite dark:bg-transparentBlack rounded-md">
+              <p className="text-lg font-bold text-darkBlue dark:text-white truncate block capitalize">
                 {project.name}
               </p>
               <Subtitle>{project.subtitle}</Subtitle>
@@ -55,9 +55,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <div>
               <Image src={img} alt={project.alt} className="object-cover" />
             </div>
-            <div className="flex justify-between items-center pt-5 px-4 py-1 border-t-[1px] border-t-light-tertiary dark:border-t-dark-tertiary">
+            <div className="flex justify-between items-center pt-5 px-4 py-1 border-t-[1px] border-t-strokeBlue dark:border-t-lightBlue">
               <div className="flex items-center">
-                <p className="text-2xl font-bold text-light-text-primary dark:text-dark-text-primary truncate block capitalize mr-3">
+                <p className="text-2xl font-bold text-darkBlue dark:text-white truncate block capitalize mr-3">
                   {project.name}
                 </p>
                 <a href={project.link} target="_blank" rel="noreferrer">
@@ -69,12 +69,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               </button>
             </div>
             <div className="px-4 py-1">
-              <p className="text-base text-light-text-primary dark:text-dark-text-primary">
+              <p className="text-base text-darkBlue dark:text-white">
                 {project.description}
               </p>
             </div>
             <div className="px-4 py-1">
-              <p className="text-base text-light-text-primary dark:text-dark-text-primary">
+              <p className="text-base text-darkBlue dark:text-white">
                 {project.stack}
               </p>
             </div>

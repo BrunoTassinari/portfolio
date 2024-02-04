@@ -9,18 +9,18 @@ const commonClasses = [
 
 const variantClasses: any = {
   primary: [
-    'border-light-tertiary',
-    'dark:border-dark-tertiary',
-    'text-light-primary',
-    'dark:text-dark-primary',
-    'bg-light-tertiary',
-    'dark:bg-dark-tertiary',
+    'border-strokeBlue',
+    'dark:border-lightBlue',
+    'text-white',
+    'dark:text-gray',
+    'bg-strokeBlue',
+    'dark:bg-lightBlue',
   ],
   secondary: [
-    'border-light-tertiary',
-    'dark:border-dark-tertiary',
-    'text-light-tertiary',
-    'dark:text-dark-tertiary',
+    'border-strokeBlue',
+    'dark:border-lightBlue',
+    'text-strokeBlue',
+    'dark:text-lightBlue',
   ],
 };
 

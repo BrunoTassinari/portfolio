@@ -5,7 +5,7 @@ type ExperienceTabListProps = {
 };
 
 const ExperienceTabList = ({ experiences }: ExperienceTabListProps) => (
-  <TabsList className="bg-light-secondary dark:bg-dark-secondary mb-4">
+  <TabsList className="bg-whiteIce dark:bg-lightGray mb-4">
     {experiences.map((e: any) => (
       <TabsTrigger key={e.company} value={e.company}>
         {e.company}

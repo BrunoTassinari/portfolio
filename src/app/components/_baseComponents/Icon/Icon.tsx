@@ -54,7 +54,7 @@ const Icon = ({ icon, children, ...rest }: IconProps) => {
   return (
     <div>
       <IconTag
-        className="h-6 w-6 text-light-tertiary dark:text-dark-tertiary mr-1"
+        className="h-6 w-6 text-strokeBlue dark:text-lightBlue mr-1"
         {...rest}
       >
         {children}

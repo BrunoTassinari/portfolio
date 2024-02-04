@@ -20,11 +20,11 @@ const Home = () => (
       <section className="w-full flex items-start mt-1">
         <Icon
           icon="linkedin"
-          className="h-7 w-7  text-light-tertiary dark:text-dark-tertiary mr-1"
+          className="h-7 w-7  text-strokeBlue dark:text-lightBlue mr-1"
         />
         <Icon
           icon="github"
-          className="h-7 w-7 text-light-tertiary dark:text-dark-tertiary mr-1"
+          className="h-7 w-7 text-strokeBlue dark:text-lightBlue mr-1"
         />
       </section>
     </SectionContainer>
