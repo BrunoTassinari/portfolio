@@ -1,10 +1,12 @@
 import SectionContainer from '@components/SectionContainer';
-import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 
 import Icon from '@/app/components/baseComponents/Icon';
 import SectionHeader from '@/app/components/SectionHeader';
+import SkillsList from './components/SkillsList';
+
+import skills from '@/app/constants/skills';
 
 const Home = () => (
   <>
@@ -44,7 +46,14 @@ const Home = () => (
       </p>
     </SectionContainer>
 
-    <Skills />
+    <SectionContainer id="skills">
+      <SectionHeader subtitle="Conhecimentos" title="Tecnologias" />
+      <section className="w-full flex justify-between">
+        <SkillsList skills={skills.frontend} />
+        <SkillsList skills={skills.backend} />
+      </section>
+    </SectionContainer>
+
     <Projects />
     <Experience />
   </>

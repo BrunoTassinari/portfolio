@@ -3,8 +3,6 @@ import React from 'react';
 
 import { AnimatePresence, motion } from 'framer-motion';
 
-import Subtitle from '@/app/components/_baseComponents/Subtitle';
-
 import Modal from '@/app/components/baseComponents/Modal';
 import Icon from '@/app/components/baseComponents/Icon';
 
@@ -45,7 +43,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               <p className="text-lg font-bold text-darkBlue dark:text-white truncate block capitalize">
                 {project.name}
               </p>
-              <Subtitle>{project.subtitle}</Subtitle>
+              <span className="m-0 text-[0.8rem] text-strokeBlue dark:text-lightBlue uppercase">
+                {project.subtitle}
+              </span>
             </div>
           </div>
         </button>
