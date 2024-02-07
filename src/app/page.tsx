@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { ThemeProvider } from 'next-themes';
 import Home from '@pages/Home';
-import Providers from './utils/providers';
+import BaseLayout from './layouts/BaseLayout';
 
 const RootPage = () => {
   const [mounted, setMounted] = useState(false);
@@ -12,9 +13,11 @@ const RootPage = () => {
   if (!mounted) return null;
 
   return (
-    <Providers>
-      <Home />
-    </Providers>
+    <ThemeProvider attribute="class">
+      <BaseLayout>
+        <Home />
+      </BaseLayout>
+    </ThemeProvider>
   );
 };
 
