@@ -3,6 +3,7 @@ import React from 'react';
 
 import { AnimatePresence, motion } from 'framer-motion';
 
+import Link from 'next/link';
 import Modal from '@/app/components/baseComponents/Modal';
 import Icon from '@/app/components/baseComponents/Icon';
 
@@ -60,9 +61,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 <p className="text-2xl font-bold text-darkBlue dark:text-white truncate block capitalize mr-3">
                   {project.name}
                 </p>
-                <a href={project.link} target="_blank" rel="noreferrer">
+                <Link href={project.link} target="_blank" rel="noreferrer">
                   <Icon icon="arrowTopRight" />
-                </a>
+                </Link>
               </div>
               <button type="button" onClick={toogleOpenDetails}>
                 <Icon icon="xMark" />

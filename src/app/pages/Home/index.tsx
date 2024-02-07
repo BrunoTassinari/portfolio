@@ -6,6 +6,7 @@ import { Tabs } from '@components/ui/tabs';
 import ExperienceTabList from '@components/ExperienceTabList';
 import ExperienceTabContent from '@components/ExperienceTabContent';
 import Button from '@components/baseComponents/Button';
+import Link from 'next/link';
 import SectionHeader from '@/app/components/SectionHeader';
 import SkillsList from '../../components/SkillsList';
 
@@ -82,7 +83,7 @@ const Home = () => (
         Estou disponível para novos projetos e oportunidades. Vamos conversar!
       </span>
       <Button variant="primary">
-        <a href="mailto:bruno.fagundes80@gmail.com">Entre em contato</a>
+        <Link href="mailto:bruno.fagundes80@gmail.com">Entre em contato</Link>
       </Button>
     </SectionContainer>
   </>

@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
+import Link from 'next/link';
 import Icon from '@/app/components/baseComponents/Icon';
 import anchors from '@/app/constants/anchors';
 
@@ -72,13 +73,13 @@ const Menu = () => {
                         key={anchor.id}
                         className="text-center hover:transform hover:scale-110 transition-all hover:text-lightBlue"
                       >
-                        <a
+                        <Link
                           href={`#${anchor.id}`}
                           className="text-[1.3rem] font-bold text-white dark:text-gray "
                           onClick={toggleMenu}
                         >
                           {anchor.label}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Icon from '@/app/components/baseComponents/Icon';
 
 const Footer = () => (
@@ -8,37 +9,37 @@ const Footer = () => (
       <section className="flex justify-between items-center w-2/4">
         <section className="flex items-center">
           <Icon icon="github" />
-          <a
+          <Link
             className="underline text-xs"
             href="https://github.com/BrunoTassinari"
             target="_blank"
             rel="noreferrer"
           >
             Github
-          </a>
+          </Link>
         </section>
         <section className="flex items-center">
           <Icon icon="linkedin" />
-          <a
+          <Link
             className="underline text-xs"
             href="https://github.com/BrunoTassinari"
             target="_blank"
             rel="noreferrer"
           >
             Linkedin
-          </a>
+          </Link>
         </section>
       </section>
       <span className="text-xs mt-2">
         &copy; 2024 - Desenvolvido por{' '}
-        <a
+        <Link
           className="underline text-strokeBlue dark:text-lightBlue"
           target="_blank"
           href="https://github.com/BrunoTassinari"
           rel="noreferrer"
         >
           Bruno Tassinari
-        </a>
+        </Link>
       </span>
     </nav>
   </footer>
