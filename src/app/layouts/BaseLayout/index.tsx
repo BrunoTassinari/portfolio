@@ -1,5 +1,5 @@
-import Footer from '@/app/pages/Home/components/Footer';
-import Header from '@/app/pages/Home/components/Header';
+import Header from '@components/Header';
+import Footer from '@components/Footer';
 
 const BaseLayout = ({
   children,
@@ -10,7 +10,7 @@ const BaseLayout = ({
     <div id="modal-root" />
     <div>
       <Header />
-      <main className="w-full flex flex-col items-center justify-center first:bg-white text-darkBlue dark:bg-gray dark:text-dark-text-primar">
+      <main className="w-full flex flex-col items-center justify-center first:bg-white text-darkBlue dark:bg-gray dark:text-white">
         {children}
       </main>
       <Footer />

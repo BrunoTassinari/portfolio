@@ -1,12 +1,17 @@
 import SectionContainer from '@components/SectionContainer';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
+import ProjectCard from '@components/ProjectCard';
+import Icon from '@components/baseComponents/Icon';
 
-import Icon from '@/app/components/baseComponents/Icon';
+import { Tabs } from '@components/ui/tabs';
+import ExperienceTabList from '@components/ExperienceTabList';
+import ExperienceTabContent from '@components/ExperienceTabContent';
+import Button from '@components/baseComponents/Button';
 import SectionHeader from '@/app/components/SectionHeader';
-import SkillsList from './components/SkillsList';
+import SkillsList from '../../components/SkillsList';
 
 import skills from '@/app/constants/skills';
+import projects from '@/app/constants/projects';
+import experiences from '@/app/constants/experiences';
 
 const Home = () => (
   <>
@@ -54,8 +59,32 @@ const Home = () => (
       </section>
     </SectionContainer>
 
-    <Projects />
-    <Experience />
+    <SectionContainer id="projects">
+      <SectionHeader subtitle="Apredizado" title="Meus projetos" />
+      <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14">
+        {projects.map((project) => (
+          <ProjectCard key={project.keyof} project={project} />
+        ))}
+      </section>
+    </SectionContainer>
+
+    <SectionContainer id="experience">
+      <SectionHeader subtitle="Carreira" title="Experiências" />
+      <Tabs defaultValue={experiences.find((e) => e.default === true)?.company}>
+        <ExperienceTabList experiences={experiences} />
+        <ExperienceTabContent experiences={experiences} />
+      </Tabs>
+    </SectionContainer>
+
+    <SectionContainer id="contact">
+      <SectionHeader subtitle="Vamos conversar" title="Entre em contato" />
+      <span className="m-0 text-[1rem] text-gray dark:text-whiteIce">
+        Estou disponível para novos projetos e oportunidades. Vamos conversar!
+      </span>
+      <Button variant="primary">
+        <a href="mailto:bruno.fagundes80@gmail.com">Entre em contato</a>
+      </Button>
+    </SectionContainer>
   </>
 );
 

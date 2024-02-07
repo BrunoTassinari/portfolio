@@ -30,16 +30,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       >
         <button
           type="button"
-          className="w-[100%] bg-white shadow-md rounded-md duration-500 hover:scale-105 hover:shadow-xl"
+          className="w-[100%] bg-white shadow-md rounded-md duration-500 hover:scale-105 hover:shadow-xl relative"
           onClick={toogleOpenDetails}
         >
-          <div className="">
+          <div>
             <Image
               src={img}
               alt={project.alt}
               className="object-cover rounded-md"
             />
-            <div className="fixed  px-4 py-1 flex flex-col justify-center items-center bg-transparentWhite dark:bg-transparentBlack rounded-md">
+            <div className="absolute top-0 w-[100%] h-[100%] px-4 py-1 flex flex-col justify-center items-center bg-transparentWhite dark:bg-transparentBlack rounded-md">
               <p className="text-lg font-bold text-darkBlue dark:text-white truncate block capitalize">
                 {project.name}
               </p>
@@ -50,7 +50,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
         </button>
 
-        <div className="relative z-10">
+        <div className="relative z-40">
           <Modal showModal={openDetails}>
             <div>
               <Image src={img} alt={project.alt} className="object-cover" />
