@@ -10,7 +10,7 @@ const SectionContainer = ({
   id,
 }: SectionContainerProps) => (
   <section
-    className={`container w-[88%] m-auto my-6 flex flex-col gap-[20px] relative ${className}`}
+    className={`container w-[88%] m-auto my-6 flex flex-col relative ${className}`}
   >
     <div
       id={id}

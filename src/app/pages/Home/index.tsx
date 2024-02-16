@@ -54,13 +54,13 @@ const Home = () => (
 
     <SectionContainer id="skills">
       <SectionHeader subtitle="Conhecimentos" title="Tecnologias" />
-      <section className="w-full flex justify-between">
+      <section className="flex justify-between">
         <SkillsList skills={skills.frontend} />
         <SkillsList skills={skills.backend} />
       </section>
     </SectionContainer>
 
-    <SectionContainer id="projects">
+    {/* <SectionContainer id="projects">
       <SectionHeader subtitle="Apredizado" title="Meus projetos" />
       <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14">
         {projects.map((project) => (
@@ -85,7 +85,7 @@ const Home = () => (
       <Button variant="primary">
         <Link href="mailto:bruno.fagundes80@gmail.com">Entre em contato</Link>
       </Button>
-    </SectionContainer>
+    </SectionContainer> */}
   </>
 );
 
