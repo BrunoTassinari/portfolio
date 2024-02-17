@@ -60,7 +60,7 @@ const Home = () => (
       </section>
     </SectionContainer>
 
-    {/* <SectionContainer id="projects">
+    <SectionContainer id="projects">
       <SectionHeader subtitle="Apredizado" title="Meus projetos" />
       <section className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14">
         {projects.map((project) => (
@@ -77,7 +77,7 @@ const Home = () => (
       </Tabs>
     </SectionContainer>
 
-    <SectionContainer id="contact">
+    <SectionContainer id="contact" className="mb-[40px]">
       <SectionHeader subtitle="Vamos conversar" title="Entre em contato" />
       <span className="m-0 text-[1rem] text-gray dark:text-whiteIce">
         Estou disponível para novos projetos e oportunidades. Vamos conversar!
@@ -85,7 +85,7 @@ const Home = () => (
       <Button variant="primary">
         <Link href="mailto:bruno.fagundes80@gmail.com">Entre em contato</Link>
       </Button>
-    </SectionContainer> */}
+    </SectionContainer>
   </>
 );
 
