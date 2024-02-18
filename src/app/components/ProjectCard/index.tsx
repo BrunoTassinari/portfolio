@@ -31,7 +31,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       >
         <button
           type="button"
-          className="w-[100%] bg-white shadow-md rounded-md duration-500 hover:scale-105 hover:shadow-xl relative"
+          className="bg-white shadow-md rounded-md duration-500 hover:scale-105 hover:shadow-xl relative"
           onClick={toogleOpenDetails}
         >
           <div>

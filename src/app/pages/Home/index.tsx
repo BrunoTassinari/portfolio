@@ -54,7 +54,7 @@ const Home = () => (
 
     <SectionContainer id="skills">
       <SectionHeader subtitle="Conhecimentos" title="Tecnologias" />
-      <section className="w-full flex justify-between">
+      <section className="flex justify-between">
         <SkillsList skills={skills.frontend} />
         <SkillsList skills={skills.backend} />
       </section>
@@ -77,7 +77,7 @@ const Home = () => (
       </Tabs>
     </SectionContainer>
 
-    <SectionContainer id="contact">
+    <SectionContainer id="contact" className="mb-[40px]">
       <SectionHeader subtitle="Vamos conversar" title="Entre em contato" />
       <span className="m-0 text-[1rem] text-gray dark:text-whiteIce">
         Estou disponível para novos projetos e oportunidades. Vamos conversar!

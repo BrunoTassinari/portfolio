@@ -10,7 +10,7 @@ const BaseLayout = ({
     <div id="modal-root" />
     <div>
       <Header />
-      <main className="w-full flex flex-col items-center justify-center first:bg-white text-darkBlue dark:bg-gray dark:text-white">
+      <main className="w-screen flex flex-col items-center justify-center first:bg-white text-darkBlue dark:bg-gray dark:text-white">
         {children}
       </main>
       <Footer />
