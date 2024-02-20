@@ -37,7 +37,7 @@ const Menu = () => {
   }, [open]);
 
   return (
-    <div>
+    <>
       <button type="button" onClick={toggleMenu}>
         <Icon
           icon="bars3BottomRight"
@@ -53,7 +53,7 @@ const Menu = () => {
             exit="exit"
             className="fixed left-0 top-0 w-full h-full origin-top bg-strokeBlue dark:bg-lightBlue"
           >
-            <section className="container w-[90%] py-4 m-auto flex justify-center flex-col">
+            <section className="max-w-[96%] mx-auto py-3 flex justify-center flex-col">
               <section className="flex flex-col gap-20">
                 <div className="flex justify-between">
                   <span className="text-[1.4rem] font-bold text-white dark:text-gray">
@@ -89,7 +89,7 @@ const Menu = () => {
           </motion.section>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 };
 
