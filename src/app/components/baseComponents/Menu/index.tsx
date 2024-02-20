@@ -37,7 +37,7 @@ const Menu = () => {
   }, [open]);
 
   return (
-    <>
+    <div>
       <button type="button" onClick={toggleMenu}>
         <Icon
           icon="bars3BottomRight"
@@ -89,7 +89,7 @@ const Menu = () => {
           </motion.section>
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 };
 
